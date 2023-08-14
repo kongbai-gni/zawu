@@ -13,7 +13,7 @@ for file in *; do
 if [ -f "$file" ]; then
 md5=$(md5sum "$file" | awk '{print $1}')
 echo $JG
-echo -e "$count:[31m$file[0m:[33m$md5[0m"
+echo -e 
 echo $JG >> MD5.txt 
 echo "$count:$file:$md5" >> MD5.txt
 let count++
